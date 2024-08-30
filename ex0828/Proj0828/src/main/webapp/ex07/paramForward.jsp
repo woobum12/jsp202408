@@ -16,8 +16,9 @@
  	<li>출생 : <%= request.getParameter("param2") %> </li>
  	<li>특징 : <%= request.getParameter("param3") %> </li>
  </ul>
- <jsp:include page="paramInclude.jsp">
+ <jsp:include page="inc/paramInclude.jsp">
  	<jsp:param name = "loc1" value="강원도 영월" />
+ 	<jsp:param name = "loc2" value="김삿갓면" />
  </jsp:include>
 </body>
 </html>

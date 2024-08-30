@@ -10,9 +10,9 @@
 		<a href ="logout.jsp">로그아웃</a>
 	<% } %>
 	<!-- 8장과 9장의 회원제 게시판 프로젝트에서 사용할 링크 -->
-	&npsp;&npsp;&npsp; <!-- 메뉴 사이의 공백(space) 확보용 특수 문자 -->
+	&nbsp;&nbsp;&nbsp; <!-- 메뉴 사이의 공백(space) 확보용 특수 문자 -->
 	<a href="../ex08/list.jsp">게시판(페이징X)</a>
-	&npsp;&npsp;&npsp;
+	&nbsp;&nbsp;&nbsp;
 	<a href="../ex09/list.jsp">게시판(페이징O)</a>
 </td>
 </tr>
