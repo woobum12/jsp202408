@@ -65,4 +65,27 @@ public class MemberDAO {
 		return cnt;
 		
 	}
+
+	public int insertMember(MemberVO vo) {
+		
+		int cnt = 0;
+		// DB 연결
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		String sql = "INSERT INTO member_test VALUES(?, ?)";
+		
+		try {
+			con = JDBCUtil.getConnection();
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, vo.getName());
+			pstmt.setString(2, vo.getTel());
+			cnt = pstmt.executeUpdate();
+		}	catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			JDBCUtil.close(con, pstmt);
+		}
+		
+		return cnt;
+	}
 }
