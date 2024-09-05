@@ -13,7 +13,7 @@ public class DBUtils {
 		Connection conn = null;
 		
 		try {
-			Class.forName("oracle.hdbc.OracleDriver");
+			Class.forName("oracle.jdbc.OracleDriver");
 			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl21v","wjb", "1234");
 		} catch (Exception e) {
 			System.out.println("----------- DB 연결 실패 -----------");
