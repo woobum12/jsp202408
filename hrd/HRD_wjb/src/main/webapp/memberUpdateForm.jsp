@@ -25,8 +25,36 @@
 				</tr>
 				<tr>
 					<td>회원설명</td>
-					<td><input type="text" value="<%=vo.getCustname() %>"
+					<td><input type="text" value="<%=vo.getCustname() %>" name="custname"></td>
+				</tr>
+			<tr>
+    <td>회원전화</td>
+    <td><input type="text" value="<%=vo.getPhone()%>" name="phone"></td>
+</tr>
+<tr>
+    <td>회원주소</td>
+    <td><input type="text" value="<%=vo.getAddress()%>" name="address"></td>
+</tr>
+<tr>
+    <td>가입일자</td>
+    <td><input type="date" value="<%=vo.getJoindate()%>" name="joindate"></td>
+</tr>
+<tr>
+    <td>고객등급</td>
+    <td><input type="text" value="<%=vo.getGrade()%>" name="grade"></td>
+</tr>
+<tr>
+    <td>거주지역</td>
+    <td><input type="text" value="<%=vo.getCity()%>" name="city"></td>
+</tr>
+<tr>
+    <td colspan="2" align="center"><input type="submit" value="수정">
+        <a href="/memberList"><input type="button" value="조회"></a>
+    </td>
+</tr>
 			</table>
 		</form>
 	</div>
 </section>
+
+<%@ include file="./footer.jsp" %>

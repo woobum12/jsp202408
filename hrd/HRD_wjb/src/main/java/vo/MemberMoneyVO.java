@@ -1,7 +1,5 @@
 package vo;
 
-import java.sql.Date;
-
 public class MemberMoneyVO {
 	
 	private int custno;
